@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+form {
+  text-align: center;
+}
+.button_t{
+            background-color: aqua;
+            color: blue;
+        }
+.input-container{
+    margin-bottom: 50px ;
+    max-width : 50px ;
+
+}
+.input{
+
+            justify-content: center;
+            text-align: center;
+            display : block ;
+            width: 5%;
+            padding : 12px ;
+            border : 5px solid #dddddd ;
+            border-radius: 4px ;
+            margin:auto;
+        }
+.label{
+		text-align: center;
+
+	}
+#footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/
+            height: 40px;
+            background: grey;
+        }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1> HOUSE PRICE PREDICTION USING LINEAR REGRESSION MODEL  </h1>
+
+    <form  method="POST" >
+    <label for="fnum"><strong>Enter the size(sq):</label>
+    <input type="number" class = "input" id="fnum" name="fnum" placeholder="9506"  required aria-required="true"  ><br><br>
+    <label for="lnum"><strong>Enter Number of Bedrooms:  </label>
+    <input type="number"  class = "input " id="lnum" name="lnum" placeholder="2 , 3 , 6" required aria-required="true" ><br><br>
+    </form>
+    <button type="submit"  value="Submit">predict price</button>
+    <div id="footer"> SOFTWARE ENGINEERING CEP <br>
+        Ahmad Mujtaba , Muhammad Talha ,       Muhammad Ali Tahir
+    </div>
+{% if prediction %}
+<p> The House Price is PKR {{prediction}}  </p>
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Deployment-Deep-Learning-Model-master/models"
+		},
+		{
+			"path": "../Deployment-Deep-Learning-Model-master/static"
+		},
+		{
+			"path": "../Deployment-Deep-Learning-Model-master/templates"
+		}
+	]
+}
